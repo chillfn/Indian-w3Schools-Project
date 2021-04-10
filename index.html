@@ -65,7 +65,7 @@
                         <a class="nav-link" href="#">Project-1</a>
                     </li>
                     <li>
-                        <a class="nav-link" href="/Indian-w3Schools/" download="/Indian-w3Schools/">
+                        <a class="nav-link" href="/Indian-w3Schools/" onclick="download(file)">
                             Download this website
                           </a>
                     </li>
@@ -84,7 +84,7 @@
         </div>
     </center>
     <script>
-            function download(file, text) {
+            function download(file) {
               
                 //creating an invisible element
                 var element = document.createElement('a');
@@ -112,7 +112,7 @@
                 var text = document.getElementById("text").value;
                 var filename = "/Indian-w3Schools";
               
-                download(filename, text);
+                download(filename);
             }, false);
          </script>
 </body>
