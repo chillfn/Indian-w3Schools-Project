@@ -65,7 +65,7 @@
                         <a class="nav-link" href="#">Project-1</a>
                     </li>
                     <li>
-                        <a class="nav-link" href="/Indian-w3Schools/" onclick="download(file)">
+                        <a class="nav-link" href="https://www.mediafire.com/folder/0rh0vj511ecxu/Indian-w3Schools">
                             Download this website
                           </a>
                     </li>
@@ -83,37 +83,6 @@
         <button class="btn btn-success mb-3">Learn More</button>
         </div>
     </center>
-    <script>
-            function download(file) {
-              
-                //creating an invisible element
-                var element = document.createElement('a');
-                element.setAttribute('href', 
-                'data:text/plain;charset=utf-8, '
-                + encodeURIComponent(text));
-                element.setAttribute('download', file);
-              
-                // Above code is equivalent to
-                // <a href="path of file" download="file name">
-              
-                document.body.appendChild(element);
-              
-                //onClick property
-                element.click();
-              
-                document.body.removeChild(element);
-            }
-              
-            // Start file download.
-            document.getElementById("btn")
-            .addEventListener("click", function() {
-                // Generate download of hello.txt 
-                // file with some content
-                var text = document.getElementById("text").value;
-                var filename = "/Indian-w3Schools";
-              
-                download(filename);
-            }, false);
-         </script>
+   
 </body>
 </html>
